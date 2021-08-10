@@ -16,6 +16,7 @@ const me = {
   shoeCount: 5,
   favThreeFoods: ['curry', 'mangos', 'ice cream']
 }
+
 console.log('A little about me:', me);
 
 /* 2. Accessing object properties.
@@ -48,7 +49,7 @@ function addToShoeCount () {
 }
 
 addToShoeCount(); // calls addToShoeCount function
-console.log('Updated shoe count is: ', me.shoeCount); // logs updated shoe count: 6
+console.log(`Updated shoe count is: ${me.shoeCount}`); // logs updated shoe count: 6
 
 /* 5. Add a new property to an existing object.
   - Add a 'favoriteColor' to your existing object
