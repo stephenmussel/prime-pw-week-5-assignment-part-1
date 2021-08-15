@@ -27,6 +27,8 @@ console.log('A little about me:', me);
 */
 
 let fullName = me.firstName + ' ' + me.lastName;
+// let fullName = [me.firstName] + ' ' + [me.lastName];
+
 console.log(fullName);
 
 /* 3. Nested arrays
@@ -43,12 +45,14 @@ console.log(me.favThreeFoods[2]);
   - Console.log your updated shoe count.
 */
 console.log(`Current shoe count is: ${me.shoeCount}`); // logs current shoe count, 5
+me.shoeCount += 1; // function to add 1 to shoe count
 
-function addToShoeCount () {
-  me.shoeCount++; // function to add 1 to shoe count
-}
+/* this was my original soluton because i thought i needed to create a function for the assignment.*/
+// function addToShoeCount () {
+//   me.shoeCount += 1; // function to add 1 to shoe count
+// }
+// addToShoeCount(); // calls addToShoeCount function
 
-addToShoeCount(); // calls addToShoeCount function
 console.log(`Updated shoe count is: ${me.shoeCount}`); // logs updated shoe count: 6
 
 /* 5. Add a new property to an existing object.
